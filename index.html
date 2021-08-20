@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Md. Rakibul Islam" content="pepsi landing page">
+    <title>Pepsi Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img class="logo" src="image/logo.png" alt="pepsi-logo"></a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I Like</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quis natus? Perferendis perspiciatis culpa molestias iste voluptatem magni cumque ratione, dicta voluptatibus unde, asperiores vel nihil inventore, beatae nisi ipsam quo. Voluptas, provident deserunt? </p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="image/pepsi1.png" alt="pepsi" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image/pepsi1.png" onclick="imgSlider('image/pepsi1.png'); changeBackground('#0062be')"></li>
+            <li><img src="image/pepsi2.png" onclick="imgSlider('image/pepsi2.png'); changeBackground('#e60c2c')"></li>
+            <li><img src="image/pepsi3.png" onclick="imgSlider('image/pepsi3.png'); changeBackground('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="image/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="image/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="image/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <!-- Javascript -->
+    <script>
+        function imgSlider(img){
+            document.querySelector(".pepsi").src= img;
+        }
+        function changeBackground(color){
+            document.querySelector(".sec").style.background= color;
+        }
+    </script>
+</body>
+</html>
